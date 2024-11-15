@@ -1,16 +1,13 @@
-// src/components/WeatherPrediction.tsx
-import React from "react";
+import React from 'react';
+import Dummy from './dummy';
 
-const WeatherPrediction = () => {
-  return (
-    <div className="p-4">
-      <h1 className="text-3xl font-bold text-center">Weather Prediction</h1>
-      <p className="mt-4 text-center">
-        This is the Weather Prediction page, where you can view predictions
-        based on weather models.
-      </p>
-    </div>
-  );
+const App: React.FC = () => {
+    return (
+        <div style={{ textAlign: 'center', padding: '20px' }}>
+            <h1>Quantum Weather Forecaster</h1>
+            <Dummy />
+        </div>
+    );
 };
 
-export default WeatherPrediction;
+export default App;
